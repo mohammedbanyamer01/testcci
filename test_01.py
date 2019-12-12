@@ -1,5 +1,5 @@
   #------ {IMPORT LIB } ------------#
-from PIL import Image, ExifTags, os, sys
+
 
 
 
