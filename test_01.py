@@ -54,7 +54,7 @@ def show_program():
 
  ------------------------------------------------------
     Author     Mohammed Banyamer
-    Name       PIG-JO 'CYBER CRIME INVESTAGTION JORDAN'
+    Name       CCI-JO 'CYBER CRIME INVESTAGTION JORDAN'
     CodeName   NASHMI01
     version    TRAIL version
     Date       15/12/2019 09:35:12
