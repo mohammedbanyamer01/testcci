@@ -1,55 +1,99 @@
-  #------ {IMPORT LIB } ------------#
+import json , sys , hashlib , os , time , marshal, getpass
 
 
 
 
-print"                  (   "  
-print"   (       (     )\ )  "
-print"   )\      )\   (()/(  "
-print" (((_)   (((_)   /(_)) "
-print" )\___   )\___  (_))   "
-print"((/ __| ((/ __| |_ _|  "
-print" | (__   | (__   | |   "
-print"  \___|   \___| |___|"
+
+reload (sys)
+sys . setdefaultencoding ( 'utf8' )
+
+def banner():
+	print '''
+	 ,gggg,       ,gggg,       ,a8a, 
+   ,88"""Y8b,   ,88"""Y8b,    ,8" "8,
+  d8"     `Y8  d8"     `Y8    d8   8b
+ d8'   8b  d8 d8'   8b  d8    88   88
+,8I    "Y88P',8I    "Y88P'    88   88
+I8'          I8'              Y8   8P
+d8           d8               `8, ,8'
+Y8,          Y8,         8888  "8,8" 
+`Yba,,_____, `Yba,,_____,`8b,  ,d8b, 
+  `"Y8888888   `"Y8888888  "Y88P" "Y
+	'''
+banner()
+
+print"{ ------------------------------------------ }".center(45)	
 print""
-print"Coded By : 'Mohammed Bany Amer'"
+print"{CYBER CRIME INVESTAGTION JORDAN}".center(45)
 print""
-print" { CYBER CRIME INVESTIGATOR }"
 
 
-def mainMenu():       ## mainMenu
-    print 30 * "-" , "MENU" , 30 * "-"
-    print "1. Author"
-    print "2. Image Meta Data"
-    print "3. Vioce Meta Data"
-    print "4. About This Programe"
-    print "5. Exit"
-    print 67 * "-"
-  
-loop=True      
-  
-while loop:          ## While loop which will keep going until loop = False
-    print_menu()    ## Displays menu
-    choice = input("Enter your choice [1-5]: ")
+def show_program():
+
+	print '''
+
+		         ,                             (
+*                           )   *
+              )     *      (
+    )        (                   (
+   (          )     (             )
+    )    *           )        )  (
+   (                (        (      *
+    )          H     )        )
+              [ ]            (
+       (  *   |-|       *     )    (
+ *      )     |_|        .          )
+       (      | |    .  
+ )           /   \     .    ' .        *
+(           |_____|  '  .    .  
+ )          | ___ |  \~~~/  ' .   (
+        *   | \ / |   \_/  \~~~/   )
+            | _Y_ |    |    \_/   (
+*     MBA   |-----|  __|__   |      *
+            `-----`        __|__
+
+ ------------------------------------------------------
+    Author     Mohammed Banyamer
+    Name       PIG-JO 'CYBER CRIME INVESTAGTION JORDAN'
+    CodeName   NASHMI01
+    version    TRAIL version
+    Date       15/12/2019 09:35:12
+    Team       N4SHMI-JO
+    Email      BANI8193@gmail.com
+    Instagram  @mbani3amer
+    Phone      +962781008061 
      
-    if choice==1:     
-        print "Menu 1 has been selected"
-        ## You can add your code or functions here
-    elif choice==2:
-        print "Menu 2 has been selected"
-        ## You can add your code or functions here
-    elif choice==3:
-        print "Menu 3 has been selected"
-        ## You can add your code or functions here
-    elif choice==4:
-        print "Menu 4 has been selected"
-        ## You can add your code or functions here
-    elif choice==5:
-        print "Menu 5 has been selected"
-        ## You can add your code or functions here
-        loop=False # This will make the while loop to end as not value of loop is set to False
-    else:
-        # Any integer inputs other than values 1-5 we print an error message
-        raw_input("Wrong option selection. Enter any key to try again..")
+* CONTACT ME IF YOU FIND ERRORS OR TO GIVE ME FEEDBACK 
+'''
+
+
+
+def maiMenu():
+	print("1. Image MetaData ")
+	print("2. vioce MetaData ")
+	print("3. About ")
+	print("4. Exit ")
+	selection=int(input("\n N4SHMI>>"))
+	if selection ==1:
+		image()
+	elif selection==2:
+		vioce()
+	elif selection==3:
+		show_program()
+maiMenu()	
+
+def image():
+	print"Write The Image Path"
+	path=str(input("N4SHMI>>"))
 	
+
+
+
+
+
+
+
+
+
+
 
